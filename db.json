@@ -1,0 +1,33 @@
+{
+    "contatos" : [
+        {
+            "id":"1",
+            "nome":"Heloisa Helena",
+            "telefone" : "1112345679"
+        },
+        {
+            "id":"2",
+            "nome":"Fernando",
+            "telefone" : "111232445679"
+        }
+    ],
+    "faq" : [
+        {
+            "id":"1",
+            "pergunta": "O que é JSON Server",
+            "resposta" : "Json Server é uma ferramenta que permite..."
+        },
+        {
+            "id":"2",
+            "pergunta": "O que é JSON Server",
+            "resposta" : "Json Server é uma ferramenta que permite..."
+        },
+        {
+            "id":"2",
+            "pergunta": "O que é JSON Server",
+            "resposta" : "Json Server é uma ferramenta que permite..."
+        }
+    ]
+        
+    
+}
