@@ -1,6 +1,6 @@
 import { useNavigation } from "@react-navigation/native";
 import React from "react";
-import { View, Text, Button, StyleSheet } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 import Card from "../Components/Card";
 
 export default function Home() {
@@ -8,7 +8,8 @@ export default function Home() {
 
   return (
     <View style={styles.container}>
-        <Text style={styles.tituloInContato}>Seja bem-vindo!</Text>
+      <Text style={styles.titulo}>Seja bem-vindo!</Text>
+      
       <Card
         title="Sobre"
         content="Saiba mais sobre nós e nossos serviços."
@@ -16,32 +17,24 @@ export default function Home() {
         onPress={() => navigation.navigate("Sobre")}
       />
 
-      <Text style={styles.tituloInfo}>Mais informações</Text>
-{/* 
-      <Button
-            title="Ir para Contato"
-            onPress={() => navigation.navigate('Contato')}
-        /> */}
-
-<Card
+      <Card
         title="Contato"
         content="Clique abaixo para entrar em contato."
         buttonText="Ir para o Contato"
         onPress={() => navigation.navigate("Contato")}
       />
 
-      
-<Card
+      <Card
         title="Configurações"
         content="Clique para ir para as configurações"
-        buttonText="Ir para as configurações"
+        buttonText="Ir para Configurações"
         onPress={() => navigation.navigate("Configuracoes")}
       />
 
-<Card
-        title="Faq"
+      <Card
+        title="FAQ"
         content="Para perguntas e respostas."
-        buttonText="Ir para Faq"
+        buttonText="Ir para FAQ"
         onPress={() => navigation.navigate("Faq")}
       />
     </View>
@@ -50,18 +43,22 @@ export default function Home() {
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
+    backgroundColor: "#F5F5F5",
     padding: 20,
   },
-  tituloContato: {
+  titulo: {
+    fontSize: 24,
     fontWeight: "bold",
-    marginBottom: 20,
+    color: "#333",
     textAlign: "center",
+    marginVertical: 20,
   },
-  tituloInfo : {
-    fontSize : 18,
-    fontWeight : 'bold',
-    marginTop : 20,
-    marginBottom : 20,
-    textAlign : 'center'
+  subtitulo: {
+    fontSize: 20,
+    color: "#31a140",
+    fontWeight: "bold",
+    marginTop: 30,
+    textAlign: "center",
   }
 });

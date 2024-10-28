@@ -16,7 +16,7 @@ const estilos = StyleSheet.create({
         justifyContent:"center",
         width: "100%",
         height: 120,
-        backgroundColor : "#000000"
+        backgroundColor : "red"
     },
     tituloHeader: {
         fontSize: 30,
